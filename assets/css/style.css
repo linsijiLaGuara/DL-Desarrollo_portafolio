@@ -3,7 +3,12 @@
 
 body{
     font-family: 'Mooli', sans-serif;
+    color: #e7e7e7; 
 }
+
+
+
+
 .portada {
     border-style: solid;
     border-color: rgb(92, 221, 238);
@@ -28,6 +33,7 @@ body{
 }
 
 .imagenredonda {
+    margin-top: 30px;
     height: 150px;
     width: 150px;
     background-color: #cccccc;
@@ -35,6 +41,12 @@ body{
     border: 4px solid #e7e7e7; /* Cambia el grosor y el color del borde según tus preferencias */
 }
 .bg-geen{
-
     background-color:#4abece;
+}
+.bg-footer{
+    background-color: #e7e7e7;
+    color: black;
+}
+.text-custom-color{
+    color: #e7e7e7;
 }
