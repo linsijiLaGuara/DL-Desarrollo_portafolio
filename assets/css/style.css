@@ -1,0 +1,34 @@
+.portada {
+    border-style: solid;
+    border-color: rgb(92, 221, 238);
+    background-image: url("../img/portada.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1000px;
+    position: relative; /* Añade posición relativa para crear el pseudo-elemento */
+}
+
+.portada::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4abece; /* Color de fondo */
+    opacity: 0.5; /* Opacidad del color de fondo */
+}
+
+.imagenredonda {
+    height: 150px;
+    width: 150px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    border: 4px solid #4abece; /* Cambia el grosor y el color del borde según tus preferencias */
+}
+.bg-geen{
+
+    background-color:#4abece;
+}
