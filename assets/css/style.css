@@ -1,13 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
-
-body{
+body {
     font-family: 'Mooli', sans-serif;
-    color: #e7e7e7; 
+    color: #e7e7e7;
 }
-
-
-
 
 .portada {
     border-style: solid;
@@ -18,7 +14,7 @@ body{
     background-size: cover;
     background-position: center center;
     height: 1000px;
-    position: relative; /* Añade posición relativa para crear el pseudo-elemento */
+    position: relative;
 }
 
 .portada::before {
@@ -28,8 +24,25 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #4abece; /* Color de fondo */
-    opacity: 0.5; /* Opacidad del color de fondo */
+    background-color: #4abece;
+    opacity: 0.5;
+}
+
+.titulo {
+    position: absolute;
+    top: 45%; 
+    left: 40%; 
+    transform: translate(-50%, -50%); /* Centra el contenido con transformaciones */
+    text-align: center; /* Centra el texto horizontalmente */
+    z-index: 1;
+  }
+.subtitulo{
+    position: absolute;
+    top: 40%; /* Posición vertical en el centro */
+    left: 40%; /* Posición horizontal en el centro */
+    transform: translate(-50%, -50%); /* Centra el contenido con transformaciones */
+    text-align: center; /* Centra el texto horizontalmente */
+    z-index: 1;
 }
 
 .imagenredonda {
@@ -38,15 +51,19 @@ body{
     width: 150px;
     background-color: #cccccc;
     border-radius: 50%;
-    border: 4px solid #e7e7e7; /* Cambia el grosor y el color del borde según tus preferencias */
+    border: 6px solid #e7e7e7;
+ 
 }
-.bg-geen{
-    background-color:#4abece;
+
+.bg-geen {
+    background-color: #4abece;
 }
-.bg-footer{
+
+.bg-footer {
     background-color: #e7e7e7;
     color: black;
 }
-.text-custom-color{
+
+.text-custom-color {
     color: #e7e7e7;
 }
